@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>音乐播放器</title>
+<meta http-equiv="content-type" content="text/htm" charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/public.css" />
+    <link rel="stylesheet" type="text/css" href="../css/music.css" />
+    <link rel="stylesheet" type="text/css" href="../content/swiper.min.css">
+    <script src="http://cool.miaov.com/js201607/3/lyrics/lyrics.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="home" style="display: block;">
+        <video autoplay muted loop>
+            <source src="../img/musicbg/musicvideo.mp4">
+        </video>
+        <header class="header">
+            <div class="prevhome">←</div>
+        </header>
+        <div class="sings">
+            <div class="swiper-container sings_con">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/1.jpg)" data-check="0"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/2.jpg)" data-check="1"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/3.jpg)" data-check="2"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/4.jpg)" data-check="3"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/5.jpg)" data-check="4"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/6.jpg)" data-check="5"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/7.jpg)" data-check="6"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/8.jpg)" data-check="7"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/9.jpg)" data-check="8"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/10.jpg)" data-check="9"></div>
+                    <div class="swiper-slide" style="background-image:url(../img/singerimg/11.jpg)" data-check="10"></div>
+                </div>
+                <!-- Add Pagination -->
+                <!--<div class="swiper-pagination"></div>-->
+            </div>
+        </div>
+        <!--<div class="check"></div>-->
+    </div>
+    <div class="music" style="display: none;">
+        <div class="content">
+            <div class="bg"></div>
+            <div class="bg_black"></div>
+            <header class="header">
+                <div class="prevmenu">←</div>
+                <h5 id="singing">Bure</h5>
+                <h6 id="singer">Angel boby</h6>
+            </header>
+            <div class="center" data-lrc="true">
+                <div class="record">
+                    <img id="play_needle" src="../img/icon/play_needle.png" alt="">
+                    <div class="disk_bg"></div>
+                    <div class="disk">
+                        <div class="item">
+                            <img class="anmiting" src="" alt="">
+                            <img class="anmiting" src="../img/icon/play_disc.png" alt="">
+                        </div>
+                        <!--<div class="item">-->
+                            <!--<img src="" alt="">-->
+                            <!--<img src="../img/icon/play_disc.png" alt="">-->
+                        <!--</div>-->
+                    </div>
+
+                </div>
+                <div class="lrc">
+                    <ul class="lrclist">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer">
+                 <div class="foot_con">
+                     <div class="process">
+                         <span id="currentTime">00:00</span>
+                         <div id="process-bar">
+                             <div id="process-all"></div>
+                             <div id="process-cur">
+                                 <em id="cur-btn"></em>
+                             </div>
+                             <div id="process-ready"></div>
+                         </div>
+                         <span id="total-time">00:00</span>
+                     </div>
+                     <div class="loop" id="loop" data-loop="false"></div>
+                     <div class="prev_btn" id="prev_btn"></div>
+                     <div class="playing_btn" id="playing_btn"></div>
+                     <div class="next_btn" id="next_btn"></div>
+                     <div class="music_menu" id="music_menu"></div>
+                 </div>
+            </footer>
+            <div class="mask"></div>
+            <div class="audio" style="display: none;">
+                <audio src="http://cool.miaov.com/js201607/3/mp3/7choubaguai.mp3" type="audio/mpeg" id="audio" data-loop="false"></audio>
+            </div>
+        </div>
+        <div class="mask_list">
+            <div class="mask_cose">
+                <h6>歌曲列表<span>（7首）</span></h6>
+                <div class="list_con">
+                    <ul class="scroll" id="list_wrap">
+                        <li class="audio_active">
+                            <a href="javascript:;">
+                                <div class="lis ellipsis">第一集 加法：不定位加法</div>
+                                <i></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lists_close">关闭</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../jscript/jquery.js"></script>
+<script src="../jscript/swiper.jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/music.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+//        pagination: {
+//            el: '.swiper-pagination'
+//        }
+    });
+
+    var A = [1,2,5];
+    var B = [1,3,7];
+    var C = '';
+    function arrFn(obj1,obj2){
+        C = obj1.concat(obj2).sort();
+        return C;
+    }
+    arrFn(A,B);
+    //console.log(arrFn(A,B));
+
+</script>
