@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3bfec6e-3eca-4566-ba85-78214542bfcd" name="Default" comment="" />
+    <list default="true" id="c3bfec6e-3eca-4566-ba85-78214542bfcd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/music.css" afterPath="$PROJECT_DIR$/css/music.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/music.less" afterPath="$PROJECT_DIR$/css/music.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/music.js" afterPath="$PROJECT_DIR$/js/music.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,7 +22,7 @@
     <favorites_list name="yingyuebofangqi" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47007224">
+    <splitter split-orientation="horizontal" split-proportion="0.47378767">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -33,8 +38,8 @@
           <file leaf-file-name="music.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/music.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="597">
-                  <caret line="100" column="46" lean-forward="true" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+                <state relative-caret-position="27">
+                  <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -76,27 +81,29 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="music.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="music.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/music.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3186">
-                  <caret line="118" column="37" lean-forward="true" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+                <state relative-caret-position="406">
+                  <caret line="291" column="11" lean-forward="true" selection-start-line="291" selection-start-column="11" selection-end-line="291" selection-end-column="11" />
                   <folding>
-                    <element signature="e#11272#13481#0" expanded="false" />
+                    <element signature="e#11301#13510#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="music.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="music.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/music.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="187" column="30" lean-forward="true" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="30" />
+                <state relative-caret-position="7128">
+                  <caret line="389" column="36" lean-forward="false" selection-start-line="389" selection-start-column="28" selection-end-line="389" selection-end-column="36" />
                   <folding>
                     <element signature="e#2707#2757#0" expanded="false" />
                     <element signature="e#2810#2857#0" expanded="false" />
                     <element signature="e#3202#3459#0" expanded="false" />
+                    <element signature="n#!!block;n#singClick#0" expanded="false" />
+                    <element signature="n#!!block;n#fnslider#0" expanded="false" />
                     <element signature="n#!!block;n#fntimer#0" expanded="false" />
                     <element signature="n#!!block;n#sToM#0" expanded="false" />
                     <element signature="n#!!block;n#minToSec#0" expanded="false" />
@@ -128,6 +135,9 @@
       <find>singing</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -140,9 +150,9 @@
         <option value="$PROJECT_DIR$/css/home.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/demo.less" />
-        <option value="$PROJECT_DIR$/css/music.less" />
         <option value="$PROJECT_DIR$/js/music.js" />
         <option value="$PROJECT_DIR$/views/music.html" />
+        <option value="$PROJECT_DIR$/css/music.less" />
       </list>
     </option>
   </component>
@@ -153,9 +163,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="36" />
-    <option name="width" value="2229" />
+    <option name="x" value="304" />
+    <option name="y" value="19" />
+    <option name="width" value="2296" />
     <option name="height" value="1092" />
   </component>
   <component name="ProjectView">
@@ -173,172 +183,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
+              <option name="myItemId" value="music-player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
+              <option name="myItemId" value="music-player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="singerimg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musicbg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public.less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="music.less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yingyuebofangqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home.less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,11 +325,14 @@
       <workItem from="1512803440960" duration="9269000" />
       <workItem from="1512959302773" duration="4896000" />
       <workItem from="1514163611935" duration="6636000" />
+      <workItem from="1515481805572" duration="1771000" />
+      <workItem from="1515485307841" duration="8191000" />
+      <workItem from="1515546015202" duration="638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113472000" />
+    <option name="totallyTimeSpent" value="124072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,12 +344,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="36" width="2229" height="1092" extended-state="0" />
+    <frame x="304" y="19" width="2296" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1242657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10263158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -538,7 +402,7 @@
         <state relative-caret-position="5510">
           <caret line="290" column="11" lean-forward="true" selection-start-line="290" selection-start-column="11" selection-end-line="290" selection-end-column="11" />
           <folding>
-            <element signature="e#11272#13481#0" expanded="false" />
+            <element signature="e#11301#13510#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -551,6 +415,8 @@
             <element signature="e#2707#2757#0" expanded="false" />
             <element signature="e#2810#2857#0" expanded="false" />
             <element signature="e#3202#3459#0" expanded="false" />
+            <element signature="n#!!block;n#singClick#0" expanded="false" />
+            <element signature="n#!!block;n#fnslider#0" expanded="false" />
             <element signature="n#!!block;n#fntimer#0" expanded="false" />
             <element signature="n#!!block;n#sToM#0" expanded="false" />
             <element signature="n#!!block;n#minToSec#0" expanded="false" />
@@ -611,6 +477,8 @@
             <element signature="e#2707#2757#0" expanded="false" />
             <element signature="e#2810#2857#0" expanded="false" />
             <element signature="e#3202#3459#0" expanded="false" />
+            <element signature="n#!!block;n#singClick#0" expanded="false" />
+            <element signature="n#!!block;n#fnslider#0" expanded="false" />
             <element signature="n#!!block;n#fntimer#0" expanded="false" />
             <element signature="n#!!block;n#sToM#0" expanded="false" />
             <element signature="n#!!block;n#minToSec#0" expanded="false" />
@@ -626,7 +494,7 @@
         <state relative-caret-position="6237">
           <caret line="231" column="11" lean-forward="true" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
           <folding>
-            <element signature="e#11272#13481#0" expanded="false" />
+            <element signature="e#11301#13510#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,7 +546,7 @@
         <state relative-caret-position="1782">
           <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
           <folding>
-            <element signature="e#11272#13481#0" expanded="false" />
+            <element signature="e#11301#13510#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,7 +598,7 @@
         <state relative-caret-position="4158">
           <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
-            <element signature="e#11272#13481#0" expanded="false" />
+            <element signature="e#11301#13510#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,28 +773,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/music.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3186">
-          <caret line="118" column="37" lean-forward="true" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-          <folding>
-            <element signature="e#11272#13481#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/music.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="187" column="30" lean-forward="true" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="30" />
+        <state relative-caret-position="7128">
+          <caret line="389" column="36" lean-forward="false" selection-start-line="389" selection-start-column="28" selection-end-line="389" selection-end-column="36" />
           <folding>
             <element signature="e#2707#2757#0" expanded="false" />
             <element signature="e#2810#2857#0" expanded="false" />
             <element signature="e#3202#3459#0" expanded="false" />
+            <element signature="n#!!block;n#singClick#0" expanded="false" />
+            <element signature="n#!!block;n#fnslider#0" expanded="false" />
             <element signature="n#!!block;n#fntimer#0" expanded="false" />
             <element signature="n#!!block;n#sToM#0" expanded="false" />
             <element signature="n#!!block;n#minToSec#0" expanded="false" />
@@ -939,9 +798,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/music.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="100" column="46" lean-forward="true" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        <state relative-caret-position="27">
+          <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/music.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="291" column="11" lean-forward="true" selection-start-line="291" selection-start-column="11" selection-end-line="291" selection-end-column="11" />
+          <folding>
+            <element signature="e#11301#13510#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

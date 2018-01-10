@@ -201,13 +201,14 @@ $('.music_menu').on('click',function(){
     $('.footer').hide();
 //	$('.mask_list').slideDown();
     $('.mask_list').show();
-
 });
 
 //点击播放列表效果
 $('#list_wrap').on('click','.list',function(){
     thisnum = $(this).attr('data-check');
     singClick(thisnum);
+    $('.footer').show();
+    $('.mask_list').hide();
 });
 
 //选集菜单关闭
@@ -216,7 +217,6 @@ $('.lists_close').on('click',function(){
 //	$('.mask_list').slideUp();
     $('.mask_list').hide();
 });
-
 //-------播放器函数封装--------//
 //点击轮播图或者歌曲列表播放歌曲 函数
 function singClick(nownum){
@@ -233,6 +233,67 @@ function singClick(nownum){
     $('#audio').attr('src','http://cool.miaov.com/js201607/3/'+data[nownum].src);
     player.play(); /*播放*/
     fntimer();
+    if(num != 1){
+        $('#playing_btn').css('background','url("../img/icon/play_rdi_btn_pause.png") no-repeat center');
+        $('#playing_btn').css('background-size','2.8rem 2.8rem');
+        $('#playing_btn').css('-webkit-background-size','2.8rem 2.8rem');
+        num = 1;
+        return num;
+    }
+}
+
+//进度条移动
+fnslider();
+function fnslider(){
+    $('#cur-btn').on('touchstart',function(e){
+        var disx = 0;
+        var movedisx = 0;
+        var nowtime = 0;
+        var nowleft = $width;
+        clearInterval(timer);
+        //点击圆点时 当前的left值
+        disx = e.originalEvent.targetTouches[0].pageX*2/50;
+        $('.wrap').on('touchmove',function(e){
+            //鼠标或者手指移动的距离
+            movedisx = e.originalEvent.targetTouches[0].pageX*2/50;
+            $width  = movedisx - disx + nowleft;
+            if($width < 0)$width = 0;
+            if($width > slider)$width = slider;
+            $('#process-cur').css('width',$width+'rem');
+            $('#cur-btn').css('left',$width+'rem');
+            //根据移动的距离计算出需要播放的当前时间
+            nowtime = $width/slider*player.duration;
+            sToM(nowtime,$('#currentTime'));
+        });
+        $('.wrap').on('touchend',function(e){
+            //return false;
+            //鼠标手指抬起时 设置改变当前播放时间
+            var $currentTime = $width/slider*player.duration;
+            player.currentTime = $currentTime;
+            if('fastSeek' in player){
+                player.fastSeek($currentTime);//改变audio.currentTime的值
+                //alert(player.currentTime);
+            }else if(player.seekable.start(0)<= $currentTime <=player.seekable.end(0)){
+                //获得第一个以秒计的音频可寻址范围（部分）：
+                player.currentTime = $currentTime;
+            }else{
+                //如果以上都不满足 就设置播放时间为缓冲到最大位置的时间
+                //player.buffered表示音频已缓冲部分的
+                player.currentTime = player.buffered.end(player.buffered.length-1);
+            }
+            fntimer();
+            $('.wrap').off('touchmove');
+            $('.wrap').off('touchend');
+        });
+    });
+
+    $('#process-bar').on('click',function(e){
+
+        var w = e.originalEvent.targetTouches[0].pageX;
+        //alert(w);
+
+    });
+
 }
 
 //加载歌曲列表
@@ -296,6 +357,14 @@ function play() {
 }
 
 //歌词
+//歌词运动
+function lrcMove(arry){
+    $.each(arry,function(i,val){
+        console.log(val);
+
+    });
+}
+
 //根据点击的歌曲名称 加载歌词
 function loadlrc(name){
     lyric.lyricStr=lyrics[name]; //当前歌曲对应的歌词字符串 lyrics歌词数据对象名称
@@ -311,7 +380,68 @@ function loadlrc(name){
         }
         $('.lrclist').append(li1);
     }
+    //lrcMove(lyric.lyMTime);
 }
+
+//19.歌词清除样式,ul回到顶部(切换歌曲调用，歌词复位)
+function lyReset () {
+    lyric.lyPreNum=-1;//上一句复位
+    lyric.lyNum=0;//当前句复位
+    lyricUl.style.top=lyric.lyricTop+'rem';//ul初始高度
+}
+//20.歌词根据播放时间滚动
+function lyMoveTo (time) {
+    var last=true;//是否是最后一句
+    for (var i = 0; i < lyric.lyMTime.length; i++) {
+        if(lyric.lyMTime[i]>(time-lyric.offset)){
+            lyric.lyNum=i-1;
+            last=false;
+            break;//显示第i个
+        }
+    }
+    if (last) {
+        lyric.lyNum=lyric.lyMTime.length-1;
+    }
+    if (lyric.lyNum<0) {
+        lyric.lyNum=0;
+    }
+    if (!lyricLi[lyric.lyNum]) {
+        return;
+    }
+    if (lyric.lyPreNum==lyric.lyNum) {
+        return;
+    }else {
+        if (lyric.lyPreNum>-1) {
+            lyricLi[lyric.lyPreNum].className="";
+            lyricLi[lyric.lyPreNum].style.cssText='';
+        }
+        lyric.lyPreNum=lyric.lyNum;
+    }
+    lyricLi[lyric.lyNum].className="active";
+    lyricLi[lyric.lyNum].style.color=lyric.color;
+    move(lyricUl,{top:lyric.lyricTop-lyric.unitHeight*lyric.lyNum},150,'easeIn');
+}
+//21.主要给歌词根据播放时间滚动加判断
+function lyricTimer () {
+    clearInterval(lyric.timer);
+    lyric.timer=setInterval(function () {
+        if (lyric.draging) {
+            return;
+        }
+        if(curDraging){
+            return;
+        }
+        if (!playBtn.onOff) {
+            clearInterval(lyric.timer);
+            return;
+        }
+        if (!Audio1.currentTime) {
+            return;
+        }
+        lyMoveTo(Audio1.currentTime);
+    }, 150);
+}
+
 //拆分歌词的时间和每句歌词 进行匹配
 function returnTimeLyric (lyric) {
     var arr=lyric.split('[');
@@ -324,6 +454,7 @@ function returnTimeLyric (lyric) {
     }
     arrTemp.push(arrTime,arrLyric);
     //console.log(arrTime);
+    console.log(arrTemp);
     return arrTemp;
 }
 
